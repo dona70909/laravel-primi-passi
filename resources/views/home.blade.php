@@ -29,14 +29,13 @@
                 
                 <ul>
                     <ul class="list-unstyled d-flex">
-
-                    @foreach($nav_links as $item)
-                        <li> 
-                            @foreach($item as $link)
-                                <a href="#">{{$link}}</a>
-                            @endforeach 
-                        </li>
-                    @endforeach    
+                        @foreach($links as $item)
+                            <li> 
+                                @foreach($item as $link)
+                                    <a href="#">{{$link}}</a>
+                                @endforeach 
+                            </li>
+                        @endforeach    
                     </ul> 
                 </ul>
             </nav>

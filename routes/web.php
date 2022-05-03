@@ -25,5 +25,5 @@ Route::get('/', function () {
             "link" => "#/",
         ],
     ]; 
-    return view('home',$nav_links);
+    return view('home',["links" => $nav_links]);
 });
