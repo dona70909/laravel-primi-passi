@@ -15,15 +15,53 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $nav_links = [
+        
         [
-            "name" => "home",
-            "link" => "#/",
+            "name" => "Laracast",
+            "link" => "https://laracasts.com",
         ],
 
         [
-            "name" => "home",
-            "link" => "#/",
+            "name" => "Docs",
+            "link" => "https://laravel.com/docs",
         ],
+
+        [
+            "name" => "News",
+            "link" => "https://laravel-news.com",
+        ],
+
+        [
+            "name" => "Blog",
+            "link" => "https://blog.laravel.com",
+        ],
+
+        
+        [
+            "name" => "Nova",
+            "link" => "https://nova.laravel.com",
+        ],
+
+        
+        [
+            "name" => "Forge",
+            "link" => "https://forge.laravel.com",
+        ],
+
+        
+        [
+            "name" => "Vapor",
+            "link" => "https://vapor.laravel.com",
+        ],
+
+        
+        [
+            "name" => "Github",
+            "link" => "https://github.com/laravel/laravel",
+        ],
+
     ]; 
     return view('home',["links" => $nav_links]);
 });
+
+

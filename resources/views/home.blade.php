@@ -13,6 +13,17 @@
     <!-- * font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <title>Document </title>
+
+    <style>
+        a {
+            color: #636b6f;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,20 +37,18 @@
             </div>
 
             <nav class="row p-2">
-                
-                <ul>
-                    <ul class="list-unstyled d-flex">
+                <div class="col-12">
+                    <ul class="list-unstyled d-flex ">
                         @foreach($links as $item)
-                            <li> 
-                                @foreach($item as $link)
-                                    <a href="#">{{$link}}</a>
-                                @endforeach 
+                            <li class="mx-2"> 
+                                <a href="{{$item['link']}}">
+                                    <h5 class="text-uppercase">{{$item['name']}}</h5>
+                                </a>
                             </li>
                         @endforeach    
                     </ul> 
-                </ul>
+                </div>
             </nav>
-
         </section>
     </header>
 
