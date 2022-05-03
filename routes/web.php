@@ -61,7 +61,10 @@ Route::get('/', function () {
         ],
 
     ]; 
-    return view('home',["links" => $nav_links]);
+
+    $array_links = ["links" => $nav_links];
+
+    return view('home',$array_links);
 });
 
 Route::get('/custom',function(){

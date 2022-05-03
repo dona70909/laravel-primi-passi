@@ -12,7 +12,7 @@
 
     <!-- * font awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    <title>Document </title>
+    <title>Laravel</title>
 
     <style>
 
@@ -37,7 +37,7 @@
         <section class="container-fluid">
             <div class="row p-4">
                 <div class="col-12">
-                    <h1 class="text-center">Welcome Laravel!</h1>
+                    <h1 class="text-center">Laravel!</h1>
                 </div>
             </div>
 
@@ -46,9 +46,10 @@
                     <ul class="list-unstyled d-flex ">
                         <li>
                             <a href="{{route('custom')}}">
-                                <h5 class="text-uppercase">hello Laravel</h5>
+                                <h5 class="text-uppercase">Laravel</h5>
                             </a>
                         </li>
+                        
                         @foreach($links as $item)
                             <li class="mx-2"> 
                                 <a href="{{$item['link']}}">
@@ -63,8 +64,6 @@
     </header>
 
     <main></main>
-
-
 
 </body>
 </html>
