@@ -45,11 +45,11 @@
                 <div class="col-12">
                     <ul class="list-unstyled d-flex ">
                         <li>
-                            <a href="{{route('custom')}}">
+                            <a href="{{route('laravel')}}">
                                 <h5 class="text-uppercase">Laravel</h5>
                             </a>
                         </li>
-                        
+
                         @foreach($links as $item)
                             <li class="mx-2"> 
                                 <a href="{{$item['link']}}">

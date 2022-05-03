@@ -67,8 +67,8 @@ Route::get('/', function () {
     return view('home',$array_links);
 });
 
-Route::get('/custom',function(){
-    return view('custom');
-})->name('custom');
+Route::get('/laravel',function(){
+    return view('laravel');
+})->name('laravel');
 
 
