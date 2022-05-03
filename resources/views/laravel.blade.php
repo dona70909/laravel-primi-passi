@@ -32,7 +32,7 @@
                         <ul class="list-unstyled">
                             <li>
                                 <a href="{{url('/')}}">
-                                    <h3>home</h3>
+                                    <h5>home</h5>
                                 </a>
                             </li>
                         </ul>
