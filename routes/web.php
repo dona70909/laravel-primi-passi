@@ -64,4 +64,8 @@ Route::get('/', function () {
     return view('home',["links" => $nav_links]);
 });
 
+Route::get('/custom',function(){
+    return view('custom');
+})->name('custom');
+
 

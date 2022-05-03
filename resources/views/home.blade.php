@@ -15,6 +15,11 @@
     <title>Document </title>
 
     <style>
+
+        header h1 {
+            color: #636b6f;
+            text-transform: uppercase;
+        }
         a {
             color: #636b6f;
             font-size: 13px;
@@ -39,6 +44,11 @@
             <nav class="row p-2">
                 <div class="col-12">
                     <ul class="list-unstyled d-flex ">
+                        <li>
+                            <a href="{{route('custom')}}">
+                                <h5 class="text-uppercase">hello Laravel</h5>
+                            </a>
+                        </li>
                         @foreach($links as $item)
                             <li class="mx-2"> 
                                 <a href="{{$item['link']}}">
