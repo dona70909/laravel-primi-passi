@@ -26,10 +26,21 @@
             </div>
 
             <nav class="row p-2">
-                <ul class="list-unstyled d-flex">
-                    <li> <a href="#">Home</a></li>
+                
+                <ul>
+                    <ul class="list-unstyled d-flex">
+
+                    @foreach($nav_links as $item)
+                        <li> 
+                            @foreach($item as $link)
+                                <a href="#">{{$link}}</a>
+                            @endforeach 
+                        </li>
+                    @endforeach    
+                    </ul> 
                 </ul>
             </nav>
+
         </section>
     </header>
 
